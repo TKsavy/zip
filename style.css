@@ -80,12 +80,18 @@ main {
   box-shadow: 0 12px 30px rgba(31, 41, 55, 0.06);
 }
 
-.instructions {
+.instructions,
+.vc-panel {
   padding: 22px;
 }
 
 .submission-panel {
   padding: 18px 22px;
+}
+
+.vc-panel p {
+  max-width: 920px;
+  color: var(--muted);
 }
 
 .instructions p,
@@ -305,6 +311,35 @@ audio {
   justify-content: flex-end;
 }
 
+.language-switch {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.language-button {
+  min-height: 40px;
+  padding: 9px 12px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: transparent;
+  color: var(--accent-dark);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-button:last-child {
+  border-right: 0;
+}
+
+.language-button.is-active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
 .download-link,
 .secondary-button {
   flex: 0 0 auto;
@@ -486,6 +521,14 @@ footer {
   .secondary-button {
     width: 100%;
     margin-top: 0;
+  }
+
+  .language-switch {
+    width: 100%;
+  }
+
+  .language-button {
+    flex: 1;
   }
 
   .evaluator-panel {
