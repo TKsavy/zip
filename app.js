@@ -17,12 +17,12 @@ const METRIC_DEFS = {
   },
   accent_similarity: {
     match: "accent",
-    labels: { en: "Accent", zh: "口音" },
+    labels: { en: "Accent Similarity", zh: "口音相似度" },
     fullLabels: { en: "Accent Similarity", zh: "口音相似度" },
   },
   emotion_similarity: {
     match: "emotion",
-    labels: { en: "Emotion", zh: "情感" },
+    labels: { en: "Emotion Similarity", zh: "情感相似度" },
     fullLabels: { en: "Emotion Similarity", zh: "情感相似度" },
   },
 };
@@ -49,7 +49,7 @@ const I18N = {
     clearScores: "Clear saved scores",
     downloadScores: "Download my scores",
     vcTitle: "What is Voice Conversion?",
-    vcText: "Voice conversion changes speech from a source speaker so that it sounds like a target/reference speaker, while trying to keep the spoken content unchanged.",
+    vcText: "Voice conversion changes speech from a source speaker so that it sounds like a target/reference speaker, while keeping the spoken content unchanged.",
     instructionsTitle: "Instructions",
     instructionsIntro: "Please complete the evaluation in a quiet environment using headphones or good speakers. Listen to the source, reference, and each anonymous system sample before assigning scores.",
     instructions: [
@@ -137,7 +137,7 @@ const I18N = {
     clearScores: "清除已保存分数",
     downloadScores: "下载我的评分",
     vcTitle: "什么是语音转换？",
-    vcText: "语音转换是把源说话人的语音转换成听起来像目标/参考说话人的语音，同时尽量保持说话内容不变。",
+    vcText: "语音转换是把源说话人的语音转换成听起来像目标/参考说话人的语音，同时保持说话内容不变。",
     instructionsTitle: "评测说明",
     instructionsIntro: "请在安静的环境中使用耳机或质量较好的扬声器完成评测。打分前，请先听源语音、参考语音以及每个匿名系统的转换语音。",
     instructions: [
