@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Change this email address before publishing the evaluation page. -->
-    <meta name="submission-email" content="obedabr@163.com">
+    <meta name="submission-email" content="your.email@example.com">
     <title>Voice Conversion Listening Evaluation</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -44,23 +44,79 @@
         <div class="criteria-grid">
           <div>
             <h3>MOS / Naturalness</h3>
-            <p>Rate how natural, clean, and human-like the converted speech sounds.</p>
-            <p lang="zh-CN">评价转换语音听起来是否自然、清晰、接近真人语音。</p>
+            <p>Judge audio quality and naturalness only.</p>
+            <ol class="score-guide">
+              <li><strong>5</strong>: Natural, clean, and human-like.</li>
+              <li><strong>4</strong>: Mostly natural, with minor artifacts.</li>
+              <li><strong>3</strong>: Understandable, but clearly synthetic or degraded.</li>
+              <li><strong>2</strong>: Unnatural, noisy, or difficult to listen to.</li>
+              <li><strong>1</strong>: Very poor quality or hard to understand.</li>
+            </ol>
+            <p lang="zh-CN">只评价语音质量和自然度。</p>
+            <ol class="score-guide" lang="zh-CN">
+              <li><strong>5</strong>：自然、清晰，接近真人语音。</li>
+              <li><strong>4</strong>：整体自然，只有少量瑕疵。</li>
+              <li><strong>3</strong>：能听懂，但明显合成或有失真。</li>
+              <li><strong>2</strong>：不自然、有噪声，或听起来比较困难。</li>
+              <li><strong>1</strong>：质量很差或难以理解。</li>
+            </ol>
           </div>
           <div>
             <h3>Speaker Similarity</h3>
-            <p>Rate how similar the converted speech is to the reference speaker in speaker identity and speaking style. Focus on the voice characteristics and speaking manner, and ignore background noise, recording condition, or other non-speaker information.</p>
-            <p lang="zh-CN">评价转换语音与参考语音中的目标说话人在说话人身份和说话风格上的相似程度。请关注声音特征和说话方式，忽略背景噪声、录音条件或其他与说话人无关的信息。</p>
+            <p>Compare with the reference speaker. Judge voice identity and speaking style; ignore background noise or recording condition.</p>
+            <ol class="score-guide">
+              <li><strong>5</strong>: Same or very similar speaker.</li>
+              <li><strong>4</strong>: Mostly similar speaker, with small differences.</li>
+              <li><strong>3</strong>: Partly similar, but noticeable differences.</li>
+              <li><strong>2</strong>: Mostly different speaker.</li>
+              <li><strong>1</strong>: Completely different speaker.</li>
+            </ol>
+            <p lang="zh-CN">与参考语音中的说话人比较。评价声音身份和说话风格，忽略背景噪声或录音条件。</p>
+            <ol class="score-guide" lang="zh-CN">
+              <li><strong>5</strong>：同一个或非常相似的说话人。</li>
+              <li><strong>4</strong>：大体相似，但有小差异。</li>
+              <li><strong>3</strong>：部分相似，但差异明显。</li>
+              <li><strong>2</strong>：大部分听起来像不同说话人。</li>
+              <li><strong>1</strong>：完全不同的说话人。</li>
+            </ol>
           </div>
           <div>
             <h3>Accent Similarity</h3>
-            <p>For L2Arctic only, rate how closely the converted speech matches the reference accent.</p>
-            <p lang="zh-CN">仅用于 L2Arctic：评价转换语音的口音与参考语音口音的相似程度。</p>
+            <p>For L2Arctic only. Compare accent with the reference, including pronunciation, rhythm, and stress.</p>
+            <ol class="score-guide">
+              <li><strong>5</strong>: Accent is very similar to the reference.</li>
+              <li><strong>4</strong>: Accent is mostly similar.</li>
+              <li><strong>3</strong>: Accent is partly similar, with clear differences.</li>
+              <li><strong>2</strong>: Accent is mostly different.</li>
+              <li><strong>1</strong>: Accent is completely different.</li>
+            </ol>
+            <p lang="zh-CN">仅用于 L2Arctic。与参考语音比较口音，包括发音、节奏和重音。</p>
+            <ol class="score-guide" lang="zh-CN">
+              <li><strong>5</strong>：口音与参考语音非常相似。</li>
+              <li><strong>4</strong>：口音大体相似。</li>
+              <li><strong>3</strong>：口音部分相似，但差异明显。</li>
+              <li><strong>2</strong>：口音大部分不同。</li>
+              <li><strong>1</strong>：口音完全不同。</li>
+            </ol>
           </div>
           <div>
             <h3>Emotion Similarity</h3>
-            <p>For ESD only, rate how closely the converted speech matches the reference emotion.</p>
-            <p lang="zh-CN">仅用于 ESD：评价转换语音的情感与参考语音情感的相似程度。</p>
+            <p>For ESD only. Compare emotion with the reference, including emotion type and strength.</p>
+            <ol class="score-guide">
+              <li><strong>5</strong>: Emotion is very similar to the reference.</li>
+              <li><strong>4</strong>: Emotion is mostly similar.</li>
+              <li><strong>3</strong>: Emotion is partly similar, with clear differences.</li>
+              <li><strong>2</strong>: Emotion is mostly different.</li>
+              <li><strong>1</strong>: Emotion is completely different.</li>
+            </ol>
+            <p lang="zh-CN">仅用于 ESD。与参考语音比较情感，包括情感类别和强度。</p>
+            <ol class="score-guide" lang="zh-CN">
+              <li><strong>5</strong>：情感与参考语音非常相似。</li>
+              <li><strong>4</strong>：情感大体相似。</li>
+              <li><strong>3</strong>：情感部分相似，但差异明显。</li>
+              <li><strong>2</strong>：情感大部分不同。</li>
+              <li><strong>1</strong>：情感完全不同。</li>
+            </ol>
           </div>
         </div>
       </section>
