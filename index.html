@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voice Conversion Listening Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Anonymous Listening Test</p>
+        <h1>Voice Conversion Evaluation</h1>
+      </div>
+      <div class="header-actions">
+        <button class="secondary-button" id="clear-scores" type="button">Clear saved scores</button>
+        <button class="download-link" id="download-scores" type="button">Download my scores</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel instructions">
+        <h2>Instructions</h2>
+        <p>
+          Please complete the evaluation in a quiet environment using headphones or good
+          speakers. Listen to the source, reference, and each anonymous system sample before
+          assigning scores.
+        </p>
+        <p lang="zh-CN">
+          请在安静的环境中使用耳机或质量较好的扬声器完成评测。打分前，请先听源语音、参考语音以及每个匿名系统的转换语音。
+        </p>
+        <ul>
+          <li>Use a 5-point scale with 0.5 increments: 1.0, 1.5, 2.0, ..., 5.0. / 请使用 1.0 到 5.0 的五分制，步长为 0.5。</li>
+          <li>Each slider starts at 0, which means not scored. Move it to 1.0-5.0 to record a score. / 每个滑块初始为 0，表示尚未打分；请移动到 1.0-5.0 记录分数。</li>
+          <li>Evaluate each anonymous system independently. Do not score the source or reference. / 请独立评价每个匿名系统，不需要给源语音或参考语音打分。</li>
+          <li>System names are hidden on purpose. Please do not try to infer the real systems. / 系统真实名称已隐藏，请不要尝试推测真实系统。</li>
+          <li>You may replay samples, but avoid changing scores repeatedly after long comparison. / 可以重复播放，但请避免长时间反复比较后频繁修改分数。</li>
+          <li>Keep playback volume comfortable and consistent across samples. / 请保持舒适且一致的播放音量。</li>
+          <li>Your scores are saved automatically in this browser until you clear them. / 分数会自动保存在当前浏览器中，直到你清除保存的分数。</li>
+        </ul>
+
+        <div class="criteria-grid">
+          <div>
+            <h3>MOS / Naturalness</h3>
+            <p>Rate how natural, clean, and human-like the converted speech sounds.</p>
+            <p lang="zh-CN">评价转换语音听起来是否自然、清晰、接近真人语音。</p>
+          </div>
+          <div>
+            <h3>Speaker Similarity</h3>
+            <p>Rate how similar the converted speech is to the reference speaker in speaker identity and speaking style. Focus on the voice characteristics and speaking manner, and ignore background noise, recording condition, or other non-speaker information.</p>
+            <p lang="zh-CN">评价转换语音与参考语音中的目标说话人在说话人身份和说话风格上的相似程度。请关注声音特征和说话方式，忽略背景噪声、录音条件或其他与说话人无关的信息。</p>
+          </div>
+          <div>
+            <h3>Accent Similarity</h3>
+            <p>For L2Arctic only, rate how closely the converted speech matches the reference accent.</p>
+            <p lang="zh-CN">仅用于 L2Arctic：评价转换语音的口音与参考语音口音的相似程度。</p>
+          </div>
+          <div>
+            <h3>Emotion Similarity</h3>
+            <p>For ESD only, rate how closely the converted speech matches the reference emotion.</p>
+            <p lang="zh-CN">仅用于 ESD：评价转换语音的情感与参考语音情感的相似程度。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel evaluator-panel">
+        <label for="evaluator-id">Nickname / 昵称</label>
+        <input id="evaluator-id" autocomplete="off" placeholder="Example: Alex01">
+        <p>Use a nickname or short ID only to distinguish different evaluation submissions. / 请使用昵称或简短编号，仅用于区分不同评测结果。</p>
+      </section>
+
+      <section class="panel status-panel" id="status" aria-live="polite">
+        Loading evaluation data...
+      </section>
+
+      <div id="datasets"></div>
+    </main>
+
+    <footer>
+      <p>Download the CSV after finishing the evaluation and send that file to the study organizer. / 完成评测后请下载 CSV，并发送给研究组织者。</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

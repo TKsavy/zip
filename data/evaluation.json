@@ -1,0 +1,988 @@
+{
+  "title": "Voice Conversion Listening Evaluation",
+  "generated_at": "2026-07-08T08:38:04+00:00",
+  "datasets": [
+    {
+      "name": "librispeech_pc",
+      "metrics": [
+        "MOS / Naturalness",
+        "Speaker Similarity"
+      ],
+      "systems": [
+        {
+          "label": "System A"
+        },
+        {
+          "label": "System B"
+        },
+        {
+          "label": "System C"
+        },
+        {
+          "label": "System D"
+        },
+        {
+          "label": "System E"
+        },
+        {
+          "label": "System F"
+        },
+        {
+          "label": "System G"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "librispeech_pc_001",
+          "source": {
+            "audio": "audio/librispeech_pc/librispeech_pc_001/source.wav",
+            "transcript": "Women can hide their pain better than we men, and bear it better, too, except when shame drops fire into the dreadful chalice."
+          },
+          "reference": {
+            "audio": "audio/librispeech_pc/librispeech_pc_001/target.wav",
+            "transcript": "Robin was glad when, at length, they were left to their own devices."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "librispeech_pc_002",
+          "source": {
+            "audio": "audio/librispeech_pc/librispeech_pc_002/source.wav",
+            "transcript": "Then he rushed down stairs into the courtyard, shouting loudly for his soldiers and threatening to patch everybody in his dominions if the sailorman was not recaptured."
+          },
+          "reference": {
+            "audio": "audio/librispeech_pc/librispeech_pc_002/target.wav",
+            "transcript": "It was a deliberate theft from his employers to protect a girl he loved."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/librispeech_pc/librispeech_pc_002/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/librispeech_pc/librispeech_pc_002/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/librispeech_pc/librispeech_pc_002/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/librispeech_pc/librispeech_pc_002/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/librispeech_pc/librispeech_pc_002/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/librispeech_pc/librispeech_pc_002/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/librispeech_pc/librispeech_pc_002/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "librispeech_pc_003",
+          "source": {
+            "audio": "audio/librispeech_pc/librispeech_pc_003/source.wav",
+            "transcript": "In autumn the wood cutters always came and felled some of the largest trees."
+          },
+          "reference": {
+            "audio": "audio/librispeech_pc/librispeech_pc_003/target.wav",
+            "transcript": "Robin was glad when, at length, they were left to their own devices."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "librispeech_pc_004",
+          "source": {
+            "audio": "audio/librispeech_pc/librispeech_pc_004/source.wav",
+            "transcript": "Nay, dear aunt, you never heard me say that all people are called to forsake their work and their families."
+          },
+          "reference": {
+            "audio": "audio/librispeech_pc/librispeech_pc_004/target.wav",
+            "transcript": "She was tired of other things."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/librispeech_pc/librispeech_pc_004/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/librispeech_pc/librispeech_pc_004/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/librispeech_pc/librispeech_pc_004/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/librispeech_pc/librispeech_pc_004/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/librispeech_pc/librispeech_pc_004/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/librispeech_pc/librispeech_pc_004/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/librispeech_pc/librispeech_pc_004/zipvc.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "vctk",
+      "metrics": [
+        "MOS / Naturalness",
+        "Speaker Similarity"
+      ],
+      "systems": [
+        {
+          "label": "System A"
+        },
+        {
+          "label": "System B"
+        },
+        {
+          "label": "System C"
+        },
+        {
+          "label": "System D"
+        },
+        {
+          "label": "System E"
+        },
+        {
+          "label": "System F"
+        },
+        {
+          "label": "System G"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "vctk_001",
+          "source": {
+            "audio": "audio/vctk/vctk_001/source.wav",
+            "transcript": "Johnsen is equally concerned."
+          },
+          "reference": {
+            "audio": "audio/vctk/vctk_001/target.wav",
+            "transcript": "He added that he felt undermined."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/vctk/vctk_001/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/vctk/vctk_001/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/vctk/vctk_001/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/vctk/vctk_001/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/vctk/vctk_001/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/vctk/vctk_001/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/vctk/vctk_001/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "vctk_002",
+          "source": {
+            "audio": "audio/vctk/vctk_002/source.wav",
+            "transcript": "Sadly, it took a tragedy to change things."
+          },
+          "reference": {
+            "audio": "audio/vctk/vctk_002/target.wav",
+            "transcript": "I can't believe the buzz."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/vctk/vctk_002/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/vctk/vctk_002/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/vctk/vctk_002/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/vctk/vctk_002/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/vctk/vctk_002/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/vctk/vctk_002/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/vctk/vctk_002/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "vctk_003",
+          "source": {
+            "audio": "audio/vctk/vctk_003/source.wav",
+            "transcript": "The difference in the rainbow depends considerably upon the size of the drops, and the width of the colored band increases as the size of the drops increases."
+          },
+          "reference": {
+            "audio": "audio/vctk/vctk_003/target.wav",
+            "transcript": "Chris Smith, the culture secretary, said he was satisfied with the decision."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/vctk/vctk_003/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/vctk/vctk_003/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/vctk/vctk_003/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/vctk/vctk_003/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/vctk/vctk_003/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/vctk/vctk_003/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/vctk/vctk_003/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "vctk_004",
+          "source": {
+            "audio": "audio/vctk/vctk_004/source.wav",
+            "transcript": "William Hague delighted his party."
+          },
+          "reference": {
+            "audio": "audio/vctk/vctk_004/target.wav",
+            "transcript": "Some have accepted it as a miracle without physical explanation."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/vctk/vctk_004/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/vctk/vctk_004/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/vctk/vctk_004/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/vctk/vctk_004/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/vctk/vctk_004/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/vctk/vctk_004/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/vctk/vctk_004/zipvc.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "seedtts",
+      "metrics": [
+        "MOS / Naturalness",
+        "Speaker Similarity"
+      ],
+      "systems": [
+        {
+          "label": "System A"
+        },
+        {
+          "label": "System B"
+        },
+        {
+          "label": "System C"
+        },
+        {
+          "label": "System D"
+        },
+        {
+          "label": "System E"
+        },
+        {
+          "label": "System F"
+        },
+        {
+          "label": "System G"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "seedtts_001",
+          "source": {
+            "audio": "audio/seedtts/seedtts_001/source.wav",
+            "transcript": "When you're at a party and somebody says \"banana bread\", a sniper might be near you."
+          },
+          "reference": {
+            "audio": "audio/seedtts/seedtts_001/target.wav",
+            "transcript": "Not specifically no, he only gave me the gist of his research the one time I spoke to him."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/seedtts/seedtts_001/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/seedtts/seedtts_001/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/seedtts/seedtts_001/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/seedtts/seedtts_001/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/seedtts/seedtts_001/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/seedtts/seedtts_001/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/seedtts/seedtts_001/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "seedtts_002",
+          "source": {
+            "audio": "audio/seedtts/seedtts_002/source.wav",
+            "transcript": "After a routine departure, the airliner experiences sporadic sudden vibrations."
+          },
+          "reference": {
+            "audio": "audio/seedtts/seedtts_002/target.wav",
+            "transcript": "Downstream the Chippewa River performs the same action on a larger scale."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/seedtts/seedtts_002/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/seedtts/seedtts_002/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/seedtts/seedtts_002/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/seedtts/seedtts_002/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/seedtts/seedtts_002/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/seedtts/seedtts_002/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/seedtts/seedtts_002/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "seedtts_003",
+          "source": {
+            "audio": "audio/seedtts/seedtts_003/source.wav",
+            "transcript": "When played, failure cards are set aside and not returned to the deck."
+          },
+          "reference": {
+            "audio": "audio/seedtts/seedtts_003/target.wav",
+            "transcript": "Instead, it was governed by the joint Ministry of Finance."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/seedtts/seedtts_003/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/seedtts/seedtts_003/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/seedtts/seedtts_003/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/seedtts/seedtts_003/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/seedtts/seedtts_003/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/seedtts/seedtts_003/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/seedtts/seedtts_003/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "seedtts_004",
+          "source": {
+            "audio": "audio/seedtts/seedtts_004/source.wav",
+            "transcript": "He relocated to Bentonville, Arkansas, where he worked for Wal-Mart as a fitness trainer."
+          },
+          "reference": {
+            "audio": "audio/seedtts/seedtts_004/target.wav",
+            "transcript": "Henry's return to the throne lasted less than six months."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/seedtts/seedtts_004/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/seedtts/seedtts_004/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/seedtts/seedtts_004/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/seedtts/seedtts_004/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/seedtts/seedtts_004/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/seedtts/seedtts_004/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/seedtts/seedtts_004/zipvc.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "L2arctic",
+      "metrics": [
+        "MOS / Naturalness",
+        "Speaker Similarity",
+        "Accent Similarity"
+      ],
+      "systems": [
+        {
+          "label": "System A"
+        },
+        {
+          "label": "System B"
+        },
+        {
+          "label": "System C"
+        },
+        {
+          "label": "System D"
+        },
+        {
+          "label": "System E"
+        },
+        {
+          "label": "System F"
+        },
+        {
+          "label": "System G"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "L2arctic_001",
+          "source": {
+            "audio": "audio/L2arctic/L2arctic_001/source.wav",
+            "transcript": "Some of the smaller veins had doubtless been ruptured"
+          },
+          "reference": {
+            "audio": "audio/L2arctic/L2arctic_001/target.wav",
+            "transcript": "He made no reply as he waited for Whittemore to continue"
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/L2arctic/L2arctic_001/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/L2arctic/L2arctic_001/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/L2arctic/L2arctic_001/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/L2arctic/L2arctic_001/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/L2arctic/L2arctic_001/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/L2arctic/L2arctic_001/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/L2arctic/L2arctic_001/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "L2arctic_002",
+          "source": {
+            "audio": "audio/L2arctic/L2arctic_002/source.wav",
+            "transcript": "Exciting times are the lot of the fish patrol"
+          },
+          "reference": {
+            "audio": "audio/L2arctic/L2arctic_002/target.wav",
+            "transcript": "Behind him lay the thousand years long road across all Siberia and Russia"
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/L2arctic/L2arctic_002/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/L2arctic/L2arctic_002/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/L2arctic/L2arctic_002/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/L2arctic/L2arctic_002/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/L2arctic/L2arctic_002/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/L2arctic/L2arctic_002/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/L2arctic/L2arctic_002/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "L2arctic_003",
+          "source": {
+            "audio": "audio/L2arctic/L2arctic_003/source.wav",
+            "transcript": "Horses and rifles had been her toys camp and trail her nursery"
+          },
+          "reference": {
+            "audio": "audio/L2arctic/L2arctic_003/target.wav",
+            "transcript": "They edged nearer and stood shoulder to shoulder facing their world"
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/L2arctic/L2arctic_003/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/L2arctic/L2arctic_003/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/L2arctic/L2arctic_003/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/L2arctic/L2arctic_003/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/L2arctic/L2arctic_003/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/L2arctic/L2arctic_003/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/L2arctic/L2arctic_003/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "L2arctic_004",
+          "source": {
+            "audio": "audio/L2arctic/L2arctic_004/source.wav",
+            "transcript": "So we have to fit the boat throughout with oil lamps as well"
+          },
+          "reference": {
+            "audio": "audio/L2arctic/L2arctic_004/target.wav",
+            "transcript": "Thus had the raw wilderness prepared him for this day"
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/L2arctic/L2arctic_004/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/L2arctic/L2arctic_004/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/L2arctic/L2arctic_004/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/L2arctic/L2arctic_004/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/L2arctic/L2arctic_004/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/L2arctic/L2arctic_004/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/L2arctic/L2arctic_004/zipvc.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "esd",
+      "metrics": [
+        "MOS / Naturalness",
+        "Speaker Similarity",
+        "Emotion Similarity"
+      ],
+      "systems": [
+        {
+          "label": "System A"
+        },
+        {
+          "label": "System B"
+        },
+        {
+          "label": "System C"
+        },
+        {
+          "label": "System D"
+        },
+        {
+          "label": "System E"
+        },
+        {
+          "label": "System F"
+        },
+        {
+          "label": "System G"
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": "esd_001",
+          "source": {
+            "audio": "audio/esd/esd_001/source.wav",
+            "transcript": "What an impetuous boy he is!"
+          },
+          "reference": {
+            "audio": "audio/esd/esd_001/target.wav",
+            "transcript": "Finn and the fairy shoemaker."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/esd/esd_001/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/esd/esd_001/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/esd/esd_001/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/esd/esd_001/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/esd/esd_001/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/esd/esd_001/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/esd/esd_001/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "esd_002",
+          "source": {
+            "audio": "audio/esd/esd_002/source.wav",
+            "transcript": "No admittance except on party business."
+          },
+          "reference": {
+            "audio": "audio/esd/esd_002/target.wav",
+            "transcript": "But things haven't change yet."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/esd/esd_002/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/esd/esd_002/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/esd/esd_002/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/esd/esd_002/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/esd/esd_002/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/esd/esd_002/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/esd/esd_002/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "esd_003",
+          "source": {
+            "audio": "audio/esd/esd_003/source.wav",
+            "transcript": "Cos I know I had some honey."
+          },
+          "reference": {
+            "audio": "audio/esd/esd_003/target.wav",
+            "transcript": "Because he was a man with infinite resource and sagacity."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/esd/esd_003/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/esd/esd_003/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/esd/esd_003/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/esd/esd_003/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/esd/esd_003/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/esd/esd_003/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/esd/esd_003/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "esd_004",
+          "source": {
+            "audio": "audio/esd/esd_004/source.wav",
+            "transcript": "The name really is the aged aged man."
+          },
+          "reference": {
+            "audio": "audio/esd/esd_004/target.wav",
+            "transcript": "What are you waiting for? man."
+          },
+          "systems": [
+            {
+              "label": "System A",
+              "audio": "audio/esd/esd_004/freevc.wav"
+            },
+            {
+              "label": "System B",
+              "audio": "audio/esd/esd_004/facodec.wav"
+            },
+            {
+              "label": "System C",
+              "audio": "audio/esd/esd_004/exvc.wav"
+            },
+            {
+              "label": "System D",
+              "audio": "audio/esd/esd_004/hierspeech.wav"
+            },
+            {
+              "label": "System E",
+              "audio": "audio/esd/esd_004/vevotimbre.wav"
+            },
+            {
+              "label": "System F",
+              "audio": "audio/esd/esd_004/vevovoice.wav"
+            },
+            {
+              "label": "System G",
+              "audio": "audio/esd/esd_004/zipvc.wav"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
