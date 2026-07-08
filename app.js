@@ -1,6 +1,7 @@
 const DATA_URL = "data/evaluation.json";
 const STORAGE_KEY = "voice_conversion_eval_scores_v2";
 const ID_STORAGE_KEY = "voice_conversion_eval_evaluator_id_v1";
+const SUBMISSION_EMAIL = document.querySelector('meta[name="submission-email"]')?.content.trim() || "your.email@example.com";
 
 const METRIC_DEFS = {
   mos_naturalness: { label: "MOS", fullLabel: "MOS / Naturalness", match: "naturalness" },
@@ -46,6 +47,8 @@ async function main() {
 }
 
 function bindGlobalControls() {
+  bindSubmissionEmail();
+
   const evaluatorInput = document.getElementById("evaluator-id");
   evaluatorInput.value = localStorage.getItem(ID_STORAGE_KEY) || "";
   evaluatorInput.addEventListener("input", () => {
@@ -62,6 +65,15 @@ function bindGlobalControls() {
     localStorage.removeItem(STORAGE_KEY);
     renderEvaluation(state.data);
     updateProgress();
+  });
+}
+
+function bindSubmissionEmail() {
+  document.querySelectorAll("[data-submission-email-text]").forEach((element) => {
+    element.textContent = SUBMISSION_EMAIL;
+  });
+  document.querySelectorAll("[data-submission-email-link]").forEach((element) => {
+    element.href = `mailto:${SUBMISSION_EMAIL}`;
   });
 }
 

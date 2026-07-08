@@ -84,10 +84,20 @@ main {
   padding: 22px;
 }
 
+.submission-panel {
+  padding: 18px 22px;
+}
+
 .instructions p,
 .instructions li,
+.submission-panel p,
 footer p {
   color: var(--muted);
+}
+
+.submission-panel a {
+  color: var(--accent-dark);
+  font-weight: 700;
 }
 
 .criteria-grid {
