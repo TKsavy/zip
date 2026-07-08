@@ -11,135 +11,45 @@
   <body>
     <header class="site-header">
       <div>
-        <p class="eyebrow">Anonymous Listening Test</p>
-        <h1>Voice Conversion Evaluation</h1>
+        <p class="eyebrow" data-i18n="eyebrow">Anonymous Listening Test</p>
+        <h1 data-i18n="title">Voice Conversion Evaluation</h1>
       </div>
       <div class="header-actions">
-        <button class="secondary-button" id="clear-scores" type="button">Clear saved scores</button>
-        <button class="download-link" id="download-scores" type="button">Download my scores</button>
+        <div class="language-switch" aria-label="Language">
+          <button class="language-button is-active" id="lang-en" type="button" data-lang="en">English</button>
+          <button class="language-button" id="lang-zh" type="button" data-lang="zh">中文</button>
+        </div>
+        <button class="secondary-button" id="clear-scores" type="button" data-i18n="clearScores">Clear saved scores</button>
+        <button class="download-link" id="download-scores" type="button" data-i18n="downloadScores">Download my scores</button>
       </div>
     </header>
 
     <main>
-      <section class="panel instructions">
-        <h2>Instructions</h2>
-        <p>
-          Please complete the evaluation in a quiet environment using headphones or good
-          speakers. Listen to the source, reference, and each anonymous system sample before
-          assigning scores.
-        </p>
-        <p lang="zh-CN">
-          请在安静的环境中使用耳机或质量较好的扬声器完成评测。打分前，请先听源语音、参考语音以及每个匿名系统的转换语音。
-        </p>
-        <ul>
-          <li>Use a 5-point scale with 0.5 increments: 1.0, 1.5, 2.0, ..., 5.0. / 请使用 1.0 到 5.0 的五分制，步长为 0.5。</li>
-          <li>Each slider starts at 0, which means not scored. Move it to 1.0-5.0 to record a score. / 每个滑块初始为 0，表示尚未打分；请移动到 1.0-5.0 记录分数。</li>
-          <li>Evaluate each anonymous system independently. Do not score the source or reference. / 请独立评价每个匿名系统，不需要给源语音或参考语音打分。</li>
-          <li>System names are hidden on purpose. Please do not try to infer the real systems. / 系统真实名称已隐藏，请不要尝试推测真实系统。</li>
-          <li>You may replay samples, but avoid changing scores repeatedly after long comparison. / 可以重复播放，但请避免长时间反复比较后频繁修改分数。</li>
-          <li>Keep playback volume comfortable and consistent across samples. / 请保持舒适且一致的播放音量。</li>
-          <li>Your scores are saved automatically in this browser until you clear them. / 分数会自动保存在当前浏览器中，直到你清除保存的分数。</li>
-        </ul>
+      <section class="panel vc-panel">
+        <h2 data-i18n="vcTitle">What is Voice Conversion?</h2>
+        <p data-i18n="vcText">Voice conversion changes speech from a source speaker so that it sounds like a target/reference speaker, while trying to keep the spoken content unchanged.</p>
+      </section>
 
-        <div class="criteria-grid">
-          <div>
-            <h3>MOS / Naturalness</h3>
-            <p>Judge audio quality and naturalness only.</p>
-            <ol class="score-guide">
-              <li><strong>5</strong>: Natural, clean, and human-like.</li>
-              <li><strong>4</strong>: Mostly natural, with minor artifacts.</li>
-              <li><strong>3</strong>: Understandable, but clearly synthetic or degraded.</li>
-              <li><strong>2</strong>: Unnatural, noisy, or difficult to listen to.</li>
-              <li><strong>1</strong>: Very poor quality or hard to understand.</li>
-            </ol>
-            <p lang="zh-CN">只评价语音质量和自然度。</p>
-            <ol class="score-guide" lang="zh-CN">
-              <li><strong>5</strong>：自然、清晰，接近真人语音。</li>
-              <li><strong>4</strong>：整体自然，只有少量瑕疵。</li>
-              <li><strong>3</strong>：能听懂，但明显合成或有失真。</li>
-              <li><strong>2</strong>：不自然、有噪声，或听起来比较困难。</li>
-              <li><strong>1</strong>：质量很差或难以理解。</li>
-            </ol>
-          </div>
-          <div>
-            <h3>Speaker Similarity</h3>
-            <p>Compare with the reference speaker. Judge voice identity and speaking style; ignore background noise or recording condition.</p>
-            <ol class="score-guide">
-              <li><strong>5</strong>: Same or very similar speaker.</li>
-              <li><strong>4</strong>: Mostly similar speaker, with small differences.</li>
-              <li><strong>3</strong>: Partly similar, but noticeable differences.</li>
-              <li><strong>2</strong>: Mostly different speaker.</li>
-              <li><strong>1</strong>: Completely different speaker.</li>
-            </ol>
-            <p lang="zh-CN">与参考语音中的说话人比较。评价声音身份和说话风格，忽略背景噪声或录音条件。</p>
-            <ol class="score-guide" lang="zh-CN">
-              <li><strong>5</strong>：同一个或非常相似的说话人。</li>
-              <li><strong>4</strong>：大体相似，但有小差异。</li>
-              <li><strong>3</strong>：部分相似，但差异明显。</li>
-              <li><strong>2</strong>：大部分听起来像不同说话人。</li>
-              <li><strong>1</strong>：完全不同的说话人。</li>
-            </ol>
-          </div>
-          <div>
-            <h3>Accent Similarity</h3>
-            <p>For L2Arctic only. Compare accent with the reference, including pronunciation, rhythm, and stress.</p>
-            <ol class="score-guide">
-              <li><strong>5</strong>: Accent is very similar to the reference.</li>
-              <li><strong>4</strong>: Accent is mostly similar.</li>
-              <li><strong>3</strong>: Accent is partly similar, with clear differences.</li>
-              <li><strong>2</strong>: Accent is mostly different.</li>
-              <li><strong>1</strong>: Accent is completely different.</li>
-            </ol>
-            <p lang="zh-CN">仅用于 L2Arctic。与参考语音比较口音，包括发音、节奏和重音。</p>
-            <ol class="score-guide" lang="zh-CN">
-              <li><strong>5</strong>：口音与参考语音非常相似。</li>
-              <li><strong>4</strong>：口音大体相似。</li>
-              <li><strong>3</strong>：口音部分相似，但差异明显。</li>
-              <li><strong>2</strong>：口音大部分不同。</li>
-              <li><strong>1</strong>：口音完全不同。</li>
-            </ol>
-          </div>
-          <div>
-            <h3>Emotion Similarity</h3>
-            <p>For ESD only. Compare emotion with the reference, including emotion type and strength.</p>
-            <ol class="score-guide">
-              <li><strong>5</strong>: Emotion is very similar to the reference.</li>
-              <li><strong>4</strong>: Emotion is mostly similar.</li>
-              <li><strong>3</strong>: Emotion is partly similar, with clear differences.</li>
-              <li><strong>2</strong>: Emotion is mostly different.</li>
-              <li><strong>1</strong>: Emotion is completely different.</li>
-            </ol>
-            <p lang="zh-CN">仅用于 ESD。与参考语音比较情感，包括情感类别和强度。</p>
-            <ol class="score-guide" lang="zh-CN">
-              <li><strong>5</strong>：情感与参考语音非常相似。</li>
-              <li><strong>4</strong>：情感大体相似。</li>
-              <li><strong>3</strong>：情感部分相似，但差异明显。</li>
-              <li><strong>2</strong>：情感大部分不同。</li>
-              <li><strong>1</strong>：情感完全不同。</li>
-            </ol>
-          </div>
-        </div>
+      <section class="panel instructions">
+        <h2 data-i18n="instructionsTitle">Instructions</h2>
+        <p data-i18n="instructionsIntro">Please complete the evaluation in a quiet environment using headphones or good speakers. Listen to the source, reference, and each anonymous system sample before assigning scores.</p>
+        <ul id="instruction-list"></ul>
+        <div class="criteria-grid" id="criteria-grid"></div>
       </section>
 
       <section class="panel submission-panel">
-        <h2>Submit Your Scores</h2>
+        <h2 data-i18n="submitTitle">Submit Your Scores</h2>
+        <p data-i18n-html="submitDownload">After you finish all ratings, click <strong>Download my scores</strong> at the top of the page. This will download a CSV file containing your scores.</p>
         <p>
-          After you finish all ratings, click <strong>Download my scores</strong> at the top
-          of the page. This will download a CSV file containing your scores.
-        </p>
-        <p>
-          Please send the downloaded CSV file by email to
+          <span data-i18n="submitEmailLead">Please send the downloaded CSV file by email to</span>
           <a data-submission-email-link href="mailto:your.email@example.com"><span data-submission-email-text>your.email@example.com</span></a>.
-        </p>
-        <p lang="zh-CN">
-          完成所有评分后，请点击页面顶部的 <strong>Download my scores</strong> 下载 CSV 评分文件，然后将该 CSV 文件发送到上面的邮箱。
         </p>
       </section>
 
       <section class="panel evaluator-panel">
-        <label for="evaluator-id">Nickname / 昵称</label>
+        <label for="evaluator-id" data-i18n="nicknameLabel">Nickname</label>
         <input id="evaluator-id" autocomplete="off" placeholder="Example: Alex01">
-        <p>Use a nickname or short ID only to distinguish different evaluation submissions. / 请使用昵称或简短编号，仅用于区分不同评测结果。</p>
+        <p data-i18n="nicknameHelp">Use a nickname or short ID only to distinguish different evaluation submissions.</p>
       </section>
 
       <section class="panel status-panel" id="status" aria-live="polite">
@@ -150,7 +60,7 @@
     </main>
 
     <footer>
-      <p>Download the CSV after finishing the evaluation and send that file to the study organizer. / 完成评测后请下载 CSV，并发送给研究组织者。</p>
+      <p data-i18n="footerText">Download the CSV after finishing the evaluation and send that file to the study organizer.</p>
     </footer>
 
     <script src="app.js"></script>
