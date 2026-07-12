@@ -2,6 +2,7 @@ const DATA_URL = "data/evaluation.json";
 const STORAGE_KEY = "voice_conversion_eval_scores_v2";
 const ID_STORAGE_KEY = "voice_conversion_eval_evaluator_id_v1";
 const LANG_STORAGE_KEY = "voice_conversion_eval_language_v1";
+const SAMPLE_SELECTION_STORAGE_KEY = "voice_conversion_eval_selected_samples_v1";
 const SUBMISSION_EMAIL = document.querySelector('meta[name="submission-email"]')?.content.trim() || "your.email@example.com";
 
 const METRIC_DEFS = {
@@ -231,7 +232,7 @@ async function main() {
     if (!response.ok) {
       throw new Error(`Could not load ${DATA_URL}: ${response.status}`);
     }
-    state.data = await response.json();
+    state.data = selectOneSamplePerDataset(await response.json());
     renderEvaluation(state.data);
     updateProgress();
   } catch (error) {
@@ -277,6 +278,44 @@ function bindSubmissionEmail() {
 function getInitialLanguage() {
   const saved = localStorage.getItem(LANG_STORAGE_KEY);
   return saved === "en" ? "en" : "zh";
+}
+
+function selectOneSamplePerDataset(data) {
+  const savedSelection = loadJson(SAMPLE_SELECTION_STORAGE_KEY, {});
+  const nextSelection = { ...savedSelection };
+  let changed = false;
+
+  const datasets = (data.datasets || []).map((dataset) => {
+    const samples = dataset.samples || [];
+    if (samples.length <= 1) {
+      if (samples[0] && nextSelection[dataset.name] !== samples[0].sample_id) {
+        nextSelection[dataset.name] = samples[0].sample_id;
+        changed = true;
+      }
+      return dataset;
+    }
+
+    let selectedSample = samples.find((sample) => sample.sample_id === savedSelection[dataset.name]);
+    if (!selectedSample) {
+      selectedSample = samples[Math.floor(Math.random() * samples.length)];
+      nextSelection[dataset.name] = selectedSample.sample_id;
+      changed = true;
+    }
+
+    return {
+      ...dataset,
+      samples: [selectedSample],
+    };
+  });
+
+  if (changed) {
+    localStorage.setItem(SAMPLE_SELECTION_STORAGE_KEY, JSON.stringify(nextSelection));
+  }
+
+  return {
+    ...data,
+    datasets,
+  };
 }
 
 function setLanguage(lang) {
