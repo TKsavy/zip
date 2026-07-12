@@ -9,21 +9,21 @@ const METRIC_DEFS = {
   mos_naturalness: {
     match: "naturalness",
     labels: { en: "MOS", zh: "自然度" },
-    fullLabels: { en: "MOS / Naturalness", zh: "MOS / 自然度" },
+    fullLabels: { en: "MOS / Naturalness", zh: "MOS (Naturalness) / 自然度" },
   },
   speaker_similarity: {
     match: "speaker",
-    labels: { en: "SIM", zh: "说话人相似度" },
+    labels: { en: "SIM : Speaker Similarity", zh: "说话人相似度" },
     fullLabels: { en: "Speaker Similarity", zh: "说话人相似度" },
   },
   accent_similarity: {
     match: "accent",
-    labels: { en: "Accent", zh: "口音" },
+    labels: { en: "Accent Similarity", zh: "口音" },
     fullLabels: { en: "Accent Similarity", zh: "口音相似度" },
   },
   emotion_similarity: {
     match: "emotion",
-    labels: { en: "Emotion", zh: "情感" },
+    labels: { en: "Emotion Similarity", zh: "情感" },
     fullLabels: { en: "Emotion Similarity", zh: "情感相似度" },
   },
 };
